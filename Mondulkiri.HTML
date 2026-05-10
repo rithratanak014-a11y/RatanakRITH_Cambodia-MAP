@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondulkiri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #f5f0eb; font-family: 'DM Sans', sans-serif; color: #222; }
+        .header { background: linear-gradient(135deg, #f40606 0%, #ef0707 50%, #c20f0f 100%); padding: 30px 50px; display: flex; justify-content: space-between; align-items: center; min-height: 160px; }
+        .header-left { color: white; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; line-height: 1.8; }
+        .header-right { color: white; font-size: 80px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; font-family: 'DM Sans', sans-serif; line-height: 1; }
+        .content { display: flex; gap: 50px; padding: 50px 60px; align-items: flex-start; }
+        .images-col { display: flex; flex-direction: column; gap: 14px; flex-shrink: 0; width: 420px; }
+        .images-col img { width: 100%; border-radius: 10px; object-fit: cover; height: 230px; }
+        .info-box { border: 2px solid #8B1A1A; border-radius: 16px; padding: 30px 34px; flex: 1; background: white; }
+        .info-box h2 { font-size: 22px; font-weight: 700; margin-bottom: 14px; color: #8B1A1A; font-family: 'Playfair Display', serif; }
+        .info-row { font-size: 15px; margin-bottom: 8px; line-height: 1.6; }
+        .info-row strong { color: #8B1A1A; }
+        .divider { border: none; border-top: 1px solid #e0d0d0; margin: 16px 0; }
+        .about-text { font-size: 15px; line-height: 1.7; color: #444; }
+        .known-title { font-size: 16px; font-weight: 600; margin: 16px 0 10px; color: #8B1A1A; }
+        .known-list { list-style: none; padding: 0; }
+        .known-list li { font-size: 14px; padding: 5px 0; border-bottom: 1px solid #f0e8e8; color: #333; }
+        .known-list li:last-child { border-bottom: none; }
+        .places-section { padding: 20px 60px 60px; }
+        .places-title { font-size: 28px; font-weight: 700; color: #8B1A1A; margin-bottom: 30px; font-family: 'Playfair Display', serif; display: flex; align-items: center; gap: 10px; }
+        .places-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; }
+        .place-card { background: white; border-radius: 14px; padding: 20px 22px; border: 1px solid #e8d8d8; transition: transform 0.18s, box-shadow 0.18s; }
+        .place-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(139,26,26,0.12); }
+        .place-icon { font-size: 28px; margin-bottom: 10px; }
+        .place-name { font-size: 16px; font-weight: 600; color: #8B1A1A; margin-bottom: 6px; }
+        .place-desc { font-size: 13px; color: #555; line-height: 1.6; }
+        .back-section { text-align: center; padding: 30px 0 50px; }
+        .back-btn { display: inline-block; background-color: #8B1A1A; color: white; text-decoration: none; padding: 14px 40px; border-radius: 999px; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; font-weight: 500; transition: background 0.2s; }
+        .back-btn:hover { background-color: #6B0F0F; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">CAMBODIA<br>MONDULKIRI</div>
+        <div class="header-right">MONDULKIRI</div>
+    </div>
+    <div class="content">
+        <div class="images-col">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Bou_Sra_Waterfall.jpg/1280px-Bou_Sra_Waterfall.jpg" alt="Bou Sra Waterfall">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Mondulkiri_elephants.jpg/1280px-Mondulkiri_elephants.jpg" alt="Mondulkiri Elephants">
+        </div>
+        <div class="info-box">
+            <h2>Mondulkiri</h2>
+            <div class="info-row"><strong>Khmer name:</strong> មណ្ឌលគិរី</div><div class="info-row"><strong>Capital:</strong> Sen Monorom</div>
+            <div class="info-row"><strong>Population:</strong> 75,269</div>
+            <div class="info-row"><strong>Area:</strong> 14,288 km²</div>
+            <hr class="divider">
+            <div class="known-title">About</div>
+            <p class="about-text">
+                Mondulkiri is Cambodia's largest and least densely populated province, located in the eastern highlands bordering Vietnam. Known as the "Wild East," it features rolling green hills, misty forests, stunning waterfalls, and is home to the Bunong indigenous people and their revered elephants. It is Cambodia's premier nature and wildlife destination.
+            </p>
+            <div class="known-title">What it is known for</div>
+            <ul class="known-list">
+                <li>🐘 Elephant Valley Project</li>
+                <li>💧 Bou Sra Waterfall</li>
+                <li>🌄 Rolling Green Hills</li>
+                <li>🧑‍🤝‍🧑 Bunong Indigenous People</li>
+            </ul>
+        </div>
+    </div>
+    <div class="places-section">
+        <div class="places-title">📍 Top Places to Visit</div>
+        <div class="places-grid">
+            <div class="place-card">
+                <div class="place-icon">🐘</div>
+                <div class="place-name">Elephant Valley Project</div>
+                <div class="place-desc">An ethical sanctuary where rescued elephants roam freely in their natural highland habitat.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">💧</div>
+                <div class="place-name">Bou Sra Waterfall</div>
+                <div class="place-desc">One of Cambodia's largest and most spectacular waterfalls, plunging through dense jungle.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🌄</div>
+                <div class="place-name">Sen Monorom Hills</div>
+                <div class="place-desc">The provincial capital sits amid misty rolling hills — perfect for motorbike rides and hikes.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🧑‍🤝‍🧑</div>
+                <div class="place-name">Bunong Villages</div>
+                <div class="place-desc">Visit indigenous Bunong communities to learn about their ancient forest traditions and lifestyle.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🌿</div>
+                <div class="place-name">Jungle Trekking</div>
+                <div class="place-desc">Multi-day guided treks through dense evergreen forests with overnight stays in villages.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">💧</div>
+                <div class="place-name">Dak Dam Waterfall</div>
+                <div class="place-desc">A remote and beautiful waterfall accessible through scenic highland countryside roads.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🦎</div>
+                <div class="place-name">Wildlife Spotting</div>
+                <div class="place-desc">Home to gibbons, sun bears, leopards, and hundreds of bird species in protected forests.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">☕️</div>
+                <div class="place-name">Coffee Farms</div>
+                <div class="place-desc">Mondulkiri's cool highland climate produces excellent Cambodian coffee grown by local farmers.</div>
+            </div>
+        </div>
+    </div>
+    <div class="back-section">
+        <a href="image_map.html" class="back-btn">← Back to Map</a>
+    </div>
+</body>
+</html>

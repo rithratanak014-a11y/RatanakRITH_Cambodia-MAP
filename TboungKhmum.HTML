@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tboung Khmum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #f5f0eb; font-family: 'DM Sans', sans-serif; color: #222; }
+        .header {
+            background: linear-gradient(135deg, #f40606 0%, #ef0707 50%, #c20f0f 100%);
+            padding: 30px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 160px;
+        }
+        .header-left {
+            color: white;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            line-height: 1.8;
+        }
+        .header-right {
+            color: white;
+            font-size: 70px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-family: 'DM Sans', sans-serif;
+            line-height: 1;
+        }
+        .content {
+            display: flex;
+            gap: 50px;
+            padding: 50px 60px;
+            align-items: flex-start;
+        }
+        .images-col {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            flex-shrink: 0;
+            width: 420px;
+        }
+        .images-col img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            height: 230px;
+        }
+        .info-box {
+            border: 2px solid #8B1A1A;
+            border-radius: 16px;
+            padding: 30px 34px;
+            flex: 1;
+            background: white;
+        }
+        .info-box h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 14px;
+            color: #8B1A1A;
+            font-family: 'Playfair Display', serif;
+        }
+        .info-row {
+            font-size: 15px;
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        .info-row strong { color: #8B1A1A; }
+        .divider { border: none; border-top: 1px solid #e0d0d0; margin: 16px 0; }
+        .about-text {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #444;
+        }
+        .known-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 16px 0 10px;
+            color: #8B1A1A;
+        }
+        .known-list {
+            list-style: none;
+            padding: 0;
+        }
+        .known-list li {
+            font-size: 14px;
+            padding: 5px 0;
+            border-bottom: 1px solid #f0e8e8;
+            color: #333;
+        }
+        .known-list li:last-child { border-bottom: none; }
+        .places-section {
+            padding: 20px 60px 60px;
+        }
+        .places-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #8B1A1A;
+            margin-bottom: 30px;
+            font-family: 'Playfair Display', serif;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .places-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 18px;
+        }
+        .place-card {
+            background: white;
+            border-radius: 14px;
+            padding: 20px 22px;
+            border: 1px solid #e8d8d8;
+            transition: transform 0.18s, box-shadow 0.18s;
+        }
+        .place-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(139,26,26,0.12);
+        }
+        .place-icon { font-size: 28px; margin-bottom: 10px; }
+        .place-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #8B1A1A;
+            margin-bottom: 6px;
+        }
+        .place-desc {font-size: 13px;
+            color: #555;
+            line-height: 1.6;
+        }
+        .back-section {
+            text-align: center;
+            padding: 30px 0 50px;
+        }
+        .back-btn {
+            display: inline-block;
+            background-color: #8B1A1A;
+            color: white;
+            text-decoration: none;
+            padding: 14px 40px;
+            border-radius: 999px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .back-btn:hover { background-color: #6B0F0F; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            CAMBODIA<br>TBOUNG KHMUM
+        </div>
+        <div class="header-right">TBOUNG KHMUM</div>
+    </div>
+
+    <div class="content">
+        <div class="images-col">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Wat_Nokor_Bachey.jpg/1280px-Wat_Nokor_Bachey.jpg" alt="Wat Nokor Bachey">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Mekong_river_Cambodia.jpg/1280px-Mekong_river_Cambodia.jpg" alt="Mekong River">
+        </div>
+        <div class="info-box">
+            <h2>Tboung Khmum</h2>
+            <div class="info-row"><strong>Khmer name:</strong> ត្បូងឃ្មុំ</div>
+            <div class="info-row"><strong>Capital:</strong> Suong</div>
+            <div class="info-row"><strong>Population:</strong> 716,641</div>
+            <div class="info-row"><strong>Area:</strong> 4,568 km²</div>
+            <hr class="divider">
+            <div class="known-title">About</div>
+            <p class="about-text">
+                Tboung Khmum is one of Cambodia's newest provinces, established in 2013 when it was separated from Kampong Cham. Located in eastern Cambodia along the Mekong River, it is known for its rubber plantations, agricultural land, and rich Khmer heritage sites.
+            </p>
+            <div class="known-title">What it is known for</div>
+            <ul class="known-list">
+                <li>🌿 Rubber Plantations</li>
+                <li>🛕 Wat Nokor Bachey</li>
+                <li>🌊 Mekong River</li>
+                <li>🏺 Khmer Heritage Sites</li>
+            </ul>
+        </div>
+    </div><div class="places-section">
+        <div class="places-title">📍 Top Places to Visit</div>
+        <div class="places-grid">
+            <div class="place-card">
+                <div class="place-icon">🛕</div>
+                <div class="place-name">Wat Nokor Bachey</div>
+                <div class="place-desc">An ancient 11th-century Angkorian temple partially embedded within a modern Buddhist pagoda.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🌊</div>
+                <div class="place-name">Mekong River Banks</div>
+                <div class="place-desc">Scenic riverside areas ideal for relaxing, fishing, and experiencing local river life.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🌿</div>
+                <div class="place-name">Rubber Plantations</div>
+                <div class="place-desc">Vast stretches of rubber tree farms that define the province's landscape and economy.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🏘</div>
+                <div class="place-name">Suong Town</div>
+                <div class="place-desc">The provincial capital, a growing trade hub with local markets and eateries.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🌾</div>
+                <div class="place-name">Local Farmlands</div>
+                <div class="place-desc">Explore the countryside and experience traditional Cambodian rural life and agriculture.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🏺</div>
+                <div class="place-name">Ancient Khmer Ruins</div>
+                <div class="place-desc">Scattered archaeological sites that reveal the province's deep historical roots.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🐟</div>
+                <div class="place-name">Fishing Villages</div>
+                <div class="place-desc">Traditional fishing communities along the Mekong offering a glimpse into riverside culture.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🎋</div>
+                <div class="place-name">Bamboo Forests</div>
+                <div class="place-desc">Lush green bamboo groves scattered throughout the province's rural areas.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="back-section">
+        <a href="image_map.html" class="back-btn">← Back to Map</a>
+    </div>
+</body>
+</html>

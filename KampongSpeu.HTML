@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kampong Speu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #f5f0eb; font-family: 'DM Sans', sans-serif; color: #222; }
+
+        .header {
+            background: linear-gradient(135deg, #6B0F0F 0%, #8B1A1A 50%, #A52020 100%);
+            padding: 30px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 160px;
+        }
+        .header-left {
+            color: white;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            line-height: 1.8;
+        }
+        .header-right {
+            color: white;
+            font-size: 70px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-family: 'DM Sans', sans-serif;
+            line-height: 1;
+            text-align: right;
+        }
+
+        .content {
+            display: flex;
+            gap: 50px;
+            padding: 50px 60px;
+            align-items: flex-start;
+        }
+        .images-col {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            flex-shrink: 0;
+            width: 420px;
+        }
+        .images-col img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            height: 230px;
+        }
+
+        .info-box {
+            border: 2px solid #8B1A1A;
+            border-radius: 16px;
+            padding: 30px 34px;
+            flex: 1;
+            background: white;
+        }
+        .info-box h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 14px;
+            color: #8B1A1A;
+            font-family: 'Playfair Display', serif;
+        }
+        .info-row { font-size: 15px; margin-bottom: 8px; line-height: 1.6; }
+        .info-row strong { color: #8B1A1A; }
+        .divider { border: none; border-top: 1px solid #e0d0d0; margin: 16px 0; }
+        .about-text { font-size: 15px; line-height: 1.7; color: #444; }
+        .known-title { font-size: 16px; font-weight: 600; margin: 16px 0 10px; color: #8B1A1A; }
+        .known-list { list-style: none; padding: 0; }
+        .known-list li { font-size: 14px; padding: 5px 0; border-bottom: 1px solid #f0e8e8; color: #333; }
+        .known-list li:last-child { border-bottom: none; }
+
+        .places-section { padding: 20px 60px 60px; }
+        .places-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #8B1A1A;
+            margin-bottom: 30px;
+            font-family: 'Playfair Display', serif;
+        }
+        .places-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 18px;
+        }
+        .place-card {
+            background: white;
+            border-radius: 14px;
+            padding: 20px 22px;
+            border: 1px solid #e8d8d8;
+            transition: transform 0.18s, box-shadow 0.18s;
+        }
+        .place-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(139,26,26,0.12);
+        }
+        .place-icon { font-size: 28px; margin-bottom: 10px; }
+        .place-name { font-size: 16px; font-weight: 600; color: #8B1A1A; margin-bottom: 6px; }
+        .place-desc { font-size: 13px; color: #555; line-height: 1.6; }
+
+        .back-section { text-align: center; padding: 30px 0 50px; }
+        .back-btn {
+            display: inline-block;
+            background-color: #8B1A1A;
+            color: white;
+            text-decoration: none;
+            padding: 14px 40px;
+            border-radius: 999px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .back-btn:hover { background-color: #6B0F0F; }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="header-left">
+            CAMBODIA<br>KAMPONG SPEU
+        </div>
+        <div class="header-right">KAMPONG<br>SPEU</div>
+    </div>
+
+    <!-- MAIN: IMAGES + INFO BOX -->
+    <div class="content">
+
+        <!-- Replace src with your own photos -->
+        <div class="images-col">
+            <img src="kampongspeu1.jpg" alt="Kampong Speu Photo 1">
+            <img src="kampongspeu2.jpg" alt="Kampong Speu Photo 2">
+        </div>
+
+        <!-- Info Box -->
+        <div class="info-box">
+            <h2>Kampong Speu</h2>
+            <div class="info-row"><strong>Khmer name:</strong> កំពង់ស្ពឺ</div>
+            <div class="info-row"><strong>Capital:</strong> Chbar Mon</div>
+            <div class="info-row"><strong>Population:</strong> 895,142</div>
+            <div class="info-row"><strong>Area:</strong> 7,017 km²</div>
+            <hr class="divider">
+            <div class="known-title">About</div>
+            <p class="about-text">
+                Kampong Speu is a province in southern Cambodia located southwest of
+                Phnom Penh. It is home to Phnom Aoral — the highest mountain in Cambodia —
+                and is well known for its production of palm sugar, one of the country's
+                most beloved traditional ingredients. The province offers scenic highlands,
+                waterfalls, and a gateway to the Cardamom Mountains.
+            </p>
+            <div class="known-title">What it is known for</div>
+            <ul class="known-list">
+                <li>🏔️ Phnom Aoral — Highest Peak in Cambodia</li>
+                <li>🌴 Palm Sugar Production</li>
+                <li>💧 Waterfalls and Nature</li>
+                <li>🌿 Cardamom Mountain Gateway</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- TOP PLACES -->
+    <div class="places-section">
+        <div class="places-title">📍 Top Places to Visit</div>
+        <div class="places-grid">
+
+            <div class="place-card">
+                <div class="place-icon">🏔️</div>
+                <div class="place-name">Phnom Aoral</div>
+                <div class="place-desc">The highest mountain in Cambodia at 1,813 metres — a challenging and rewarding trek through jungle trails.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">💧</div>
+                <div class="place-name">Kirirom National Park</div>
+                <div class="place-desc">A cool highland national park with pine forests, waterfalls, cliffs, and amazing views over the plains below.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🌴</div>
+                <div class="place-name">Palm Sugar Farms</div>
+                <div class="place-desc">Visit local farms to see how traditional Cambodian palm sugar is harvested and made by hand.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🌊</div>
+                <div class="place-name">Popok Waterfall</div>
+                <div class="place-desc">A beautiful hidden waterfall deep in the forest — a refreshing escape from the heat.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🌿</div>
+                <div class="place-name">Cardamom Mountains</div>
+                <div class="place-desc">One of Southeast Asia's largest remaining rainforests, rich in wildlife, rivers, and trekking routes.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🏕️</div>
+                <div class="place-name">Kirirom Hillside Resort Area</div>
+                <div class="place-desc">A popular weekend escape from Phnom Penh with cool weather, pine trees, and scenic hiking paths.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">⛩️</div>
+                <div class="place-name">Wat Kompong Speu</div>
+                <div class="place-desc">The main Buddhist temple in the provincial capital, a spiritual and cultural landmark for locals.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🐘</div>
+                <div class="place-name">Wildlife Spotting</div>
+                <div class="place-desc">The forests of Kampong Speu are home to rare wildlife including elephants, leopards, and gibbons.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🚴</div>
+                <div class="place-name">Rural Village Cycling</div>
+                <div class="place-desc">Cycle through quiet villages surrounded by palm trees and rice paddies for a peaceful local experience.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🛍️</div>
+                <div class="place-name">Chbar Mon Market</div>
+                <div class="place-desc">The busy capital market of Kampong Speu offering fresh local produce, palm sugar products, and crafts.</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- BACK TO MAP -->
+    <div class="back-section">
+        <a href="image_map.html" class="back-btn">← Back to Map</a>
+    </div>
+
+</body>
+</html>

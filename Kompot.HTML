@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kampot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #f5f0eb; font-family: 'DM Sans', sans-serif; color: #222; }
+
+        .header {
+            background: linear-gradient(135deg, #6B0F0F 0%, #8B1A1A 50%, #A52020 100%);
+            padding: 30px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 160px;
+        }
+        .header-left {
+            color: white;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            line-height: 1.8;
+        }
+        .header-right {
+            color: white;
+            font-size: 90px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-family: 'DM Sans', sans-serif;
+            line-height: 1;
+            text-align: right;
+        }
+
+        .content {
+            display: flex;
+            gap: 50px;
+            padding: 50px 60px;
+            align-items: flex-start;
+        }
+        .images-col {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            flex-shrink: 0;
+            width: 420px;
+        }
+        .images-col img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            height: 230px;
+        }
+
+        .info-box {
+            border: 2px solid #8B1A1A;
+            border-radius: 16px;
+            padding: 30px 34px;
+            flex: 1;
+            background: white;
+        }
+        .info-box h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 14px;
+            color: #8B1A1A;
+            font-family: 'Playfair Display', serif;
+        }
+        .info-row { font-size: 15px; margin-bottom: 8px; line-height: 1.6; }
+        .info-row strong { color: #8B1A1A; }
+        .divider { border: none; border-top: 1px solid #e0d0d0; margin: 16px 0; }
+        .about-text { font-size: 15px; line-height: 1.7; color: #444; }
+        .known-title { font-size: 16px; font-weight: 600; margin: 16px 0 10px; color: #8B1A1A; }
+        .known-list { list-style: none; padding: 0; }
+        .known-list li { font-size: 14px; padding: 5px 0; border-bottom: 1px solid #f0e8e8; color: #333; }
+        .known-list li:last-child { border-bottom: none; }
+
+        .places-section { padding: 20px 60px 60px; }
+        .places-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #8B1A1A;
+            margin-bottom: 30px;
+            font-family: 'Playfair Display', serif;
+        }
+        .places-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 18px;
+        }
+        .place-card {
+            background: white;
+            border-radius: 14px;
+            padding: 20px 22px;
+            border: 1px solid #e8d8d8;
+            transition: transform 0.18s, box-shadow 0.18s;
+        }
+        .place-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(139,26,26,0.12);
+        }
+        .place-icon { font-size: 28px; margin-bottom: 10px; }
+        .place-name { font-size: 16px; font-weight: 600; color: #8B1A1A; margin-bottom: 6px; }
+        .place-desc { font-size: 13px; color: #555; line-height: 1.6; }
+
+        .back-section { text-align: center; padding: 30px 0 50px; }
+        .back-btn {
+            display: inline-block;
+            background-color: #8B1A1A;
+            color: white;
+            text-decoration: none;
+            padding: 14px 40px;
+            border-radius: 999px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .back-btn:hover { background-color: #6B0F0F; }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="header-left">
+            CAMBODIA<br>KAMPOT
+        </div>
+        <div class="header-right">KAMPOT</div>
+    </div>
+
+    <!-- MAIN: IMAGES + INFO BOX -->
+    <div class="content">
+
+        <!-- Replace src with your own photos -->
+        <div class="images-col">
+            <img src="kampot1.jpg" alt="Kampot Photo 1">
+            <img src="kampot2.jpg" alt="Kampot Photo 2">
+        </div>
+
+        <!-- Info Box -->
+        <div class="info-box">
+            <h2>Kampot</h2>
+            <div class="info-row"><strong>Khmer name:</strong> កំពត</div>
+            <div class="info-row"><strong>Capital:</strong> Kampot</div>
+            <div class="info-row"><strong>Population:</strong> 629,488</div>
+            <div class="info-row"><strong>Area:</strong> 4,873 km²</div>
+            <hr class="divider">
+            <div class="known-title">About</div>
+            <p class="about-text">
+                Kampot is a charming riverside province in southern Cambodia known for
+                its laid-back atmosphere, French colonial architecture, and world-famous
+                Kampot pepper. Nestled between the Elephant Mountains and the Gulf of
+                Thailand, it is one of Cambodia's most beloved destinations for both
+                locals and international visitors seeking nature, culture, and relaxation.
+            </p>
+            <div class="known-title">What it is known for</div>
+            <ul class="known-list">
+                <li>🌶️ World-Famous Kampot Pepper</li>
+                <li>🏔️ Bokor Hill Station</li>
+                <li>🏝️ Rabbit Island (Koh Tonsay)</li>
+                <li>🏛️ French Colonial Architecture</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- TOP PLACES -->
+    <div class="places-section">
+        <div class="places-title">📍 Top Places to Visit</div>
+        <div class="places-grid">
+
+            <div class="place-card">
+                <div class="place-icon">🏔️</div>
+                <div class="place-name">Bokor Hill Station</div>
+                <div class="place-desc">A mysterious French-era hilltop resort with an abandoned casino, church ruins, and spectacular coastal views.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🏝️</div>
+                <div class="place-name">Rabbit Island (Koh Tonsay)</div>
+                <div class="place-desc">A peaceful offshore island with white sand beaches, clear water, and simple bungalows for an overnight stay.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🌶️</div>
+                <div class="place-name">Pepper Plantations</div>
+                <div class="place-desc">Tour the famous Kampot pepper farms and learn why this pepper is considered the best in the world.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🌊</div>
+                <div class="place-name">Kampot River</div>
+                <div class="place-desc">Take a relaxing sunset boat cruise along the river surrounded by mangroves and mountain scenery.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🏛️</div>
+                <div class="place-name">Old French Quarter</div>
+                <div class="place-desc">Stroll through beautifully preserved French colonial streets lined with colourful buildings and cafes.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🦑</div>
+                <div class="place-name">Crab Market (Kep Nearby)</div>
+                <div class="place-desc">Visit the famous nearby crab market for fresh seafood — a must-do for any food lover in the region.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">💧</div>
+                <div class="place-name">Tek Chhou Waterfall</div>
+                <div class="place-desc">A popular local waterfall and swimming spot surrounded by jungle — perfect for a cool dip.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🐊</div>
+                <div class="place-name">Phnom Chhngok Cave Temple</div>
+                <div class="place-desc">An ancient cave temple with a small Hindu shrine and beautiful stalactites deep inside the mountain.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🌅</div>
+                <div class="place-name">Sunset at the Riverfront</div>
+                <div class="place-desc">Watch the stunning sunset from Kampot's scenic riverfront — one of the most beautiful in Cambodia.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🚴</div>
+                <div class="place-name">Countryside Cycling</div>
+                <div class="place-desc">Explore pepper farms, salt fields, and quiet villages on two wheels through the scenic Kampot countryside.</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- BACK TO MAP -->
+    <div class="back-section">
+        <a href="image_map.html" class="back-btn">← Back to Map</a>
+    </div>
+
+</body>
+</html>

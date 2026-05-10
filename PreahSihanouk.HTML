@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preah Sihanouk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #f5f0eb; font-family: 'DM Sans', sans-serif; color: #222; }
+        .header { background: linear-gradient(135deg, #0077b6 0%, #0096c7 50%, #005f8e 100%); padding: 30px 50px; display: flex; justify-content: space-between; align-items: center; min-height: 160px; }
+        .header-left { color: white; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; line-height: 1.8; }
+        .header-right { color: white; font-size: 48px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; font-family: 'DM Sans', sans-serif; line-height: 1; text-align: right; }
+        .content { display: flex; gap: 50px; padding: 50px 60px; align-items: flex-start; }
+        .images-col { display: flex; flex-direction: column; gap: 14px; flex-shrink: 0; width: 420px; }
+        .images-col img { width: 100%; border-radius: 10px; object-fit: cover; height: 230px; }
+        .info-box { border: 2px solid #0077b6; border-radius: 16px; padding: 30px 34px; flex: 1; background: white; }
+        .info-box h2 { font-size: 22px; font-weight: 700; margin-bottom: 14px; color: #0077b6; font-family: 'Playfair Display', serif; }
+        .info-row { font-size: 15px; margin-bottom: 8px; line-height: 1.6; }
+        .info-row strong { color: #0077b6; }
+        .divider { border: none; border-top: 1px solid #cce4f0; margin: 16px 0; }
+        .about-text { font-size: 15px; line-height: 1.7; color: #444; }
+        .known-title { font-size: 16px; font-weight: 600; margin: 16px 0 10px; color: #0077b6; }
+        .known-list { list-style: none; padding: 0; }
+        .known-list li { font-size: 14px; padding: 5px 0; border-bottom: 1px solid #e8f4fb; color: #333; }
+        .known-list li:last-child { border-bottom: none; }
+        .places-section { padding: 20px 60px 60px; }
+        .places-title { font-size: 28px; font-weight: 700; color: #0077b6; margin-bottom: 30px; font-family: 'Playfair Display', serif; display: flex; align-items: center; gap: 10px; }
+        .places-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; }
+        .place-card { background: white; border-radius: 14px; padding: 20px 22px; border: 1px solid #cce4f0; transition: transform 0.18s, box-shadow 0.18s; }
+        .place-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,119,182,0.12); }
+        .place-icon { font-size: 28px; margin-bottom: 10px; }
+        .place-name { font-size: 16px; font-weight: 600; color: #0077b6; margin-bottom: 6px; }
+        .place-desc { font-size: 13px; color: #555; line-height: 1.6; }
+        .back-section { text-align: center; padding: 30px 0 50px; }
+        .back-btn { display: inline-block; background-color: #0077b6; color: white; text-decoration: none; padding: 14px 40px; border-radius: 999px; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; font-weight: 500; transition: background 0.2s; }
+        .back-btn:hover { background-color: #005f8e; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">CAMBODIA<br>PREAH SIHANOUK</div>
+        <div class="header-right">PREAH<br>SIHANOUK</div>
+    </div>
+    <div class="content">
+        <div class="images-col">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sihanoukville_beach.jpg/1280px-Sihanoukville_beach.jpg" alt="Sihanoukville Beach">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Koh_Rong_island.jpg/1280px-Koh_Rong_island.jpg" alt="Koh Rong Island">
+        </div>
+        <div class="info-box">
+            <h2>Preah Sihanouk</h2>
+            <div class="info-row"><strong>Khmer name:</strong> ព្រះសីហនុ</div>
+            <div class="info-row"><strong>Capital:</strong> Sihanoukville (Kampong Som)</div>
+            <div class="info-row"><strong>Population:</strong> 309,849</div>
+            <div class="info-row"><strong>Area:</strong> 868 km²</div>
+            <hr class="divider">
+            <div class="known-title">About</div>
+            <p class="about-text">
+                Preah Sihanouk is Cambodia's premier coastal province, home to the country's most famous beaches and tropical islands. Located on the Gulf of Thailand, it features the bustling port city of Sihanoukville and stunning offshore islands including Koh Rong and Koh Rong Samloem. The province is a major hub for tourism, fishing, and international trade, with a deep-water port that handles much of Cambodia's cargo.
+            </p>
+            <div class="known-title">What it is known for</div>
+            <ul class="known-list">
+                <li>🏖 Stunning beaches and coastline</li>
+                <li>🏝 Koh Rong & Koh Rong Samloem islands</li>
+                <li>🐠 Snorkelling and diving</li>
+                <li>⚓ Sihanoukville deep-water port</li>
+            </ul>
+        </div>
+    </div>
+    <div class="places-section">
+        <div class="places-title">📍 Top Places to Visit</div>
+        <div class="places-grid">
+            <div class="place-card">
+                <div class="place-icon">🏝</div>
+                <div class="place-name">Koh Rong</div>
+                <div class="place-desc">Cambodia's most famous island, known for its pristine white sand beaches, crystal-clear waters, and vibrant nightlife scene.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🌊</div>
+                <div class="place-name">Koh Rong Samloem</div>
+                <div class="place-desc">A quieter, more laid-back island neighbour to Koh Rong with powdery beaches and bioluminescent plankton at night.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🏖</div>
+                <div class="place-name">Otres Beach</div>
+                <div class="place-desc">A long, relaxed beach south of Sihanoukville city, popular with travellers seeking a quieter coastal atmosphere.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🐠</div>
+                <div class="place-name">Snorkelling & Diving</div>
+                <div class="place-desc">The surrounding waters offer excellent snorkelling and scuba diving with colourful coral reefs and diverse marine life.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🌅</div>
+                <div class="place-name">Sokha Beach</div>
+                <div class="place-desc">A sheltered, calm beach ideal for swimming, with soft sand and gentle waves perfect for families.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🦈</div>
+                <div class="place-name">Ream National Park</div>
+                <div class="place-desc">A coastal national park with mangroves, dolphins, sea turtles, and some of Cambodia's most beautiful undeveloped beaches.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🚢</div>
+                <div class="place-name">Sihanoukville Port</div>
+                <div class="place-desc">Cambodia's only deep-water seaport and a gateway for island-hopping boats heading to the Gulf of Thailand islands.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🌿</div>
+                <div class="place-name">Koh Ta Kiev</div>
+                <div class="place-desc">A small, remote island with jungle camping, hammock bungalows, and some of the most untouched beaches in Cambodia.</div>
+            </div>
+        </div>
+    </div>
+    <div class="back-section">
+        <a href="image_map.html" class="back-btn">← Back to Map</a>
+    </div>
+</body>
+</html>

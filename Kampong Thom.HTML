@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kampong Thom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #f5f0eb; font-family: 'DM Sans', sans-serif; color: #222; }
+
+        .header {
+            background: linear-gradient(135deg, #6B0F0F 0%, #8B1A1A 50%, #A52020 100%);
+            padding: 30px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 160px;
+        }
+        .header-left {
+            color: white;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            line-height: 1.8;
+        }
+        .header-right {
+            color: white;
+            font-size: 70px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-family: 'DM Sans', sans-serif;
+            line-height: 1;
+            text-align: right;
+        }
+
+        .content {
+            display: flex;
+            gap: 50px;
+            padding: 50px 60px;
+            align-items: flex-start;
+        }
+        .images-col {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            flex-shrink: 0;
+            width: 420px;
+        }
+        .images-col img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            height: 230px;
+        }
+
+        .info-box {
+            border: 2px solid #8B1A1A;
+            border-radius: 16px;
+            padding: 30px 34px;
+            flex: 1;
+            background: white;
+        }
+        .info-box h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 14px;
+            color: #8B1A1A;
+            font-family: 'Playfair Display', serif;
+        }
+        .info-row { font-size: 15px; margin-bottom: 8px; line-height: 1.6; }
+        .info-row strong { color: #8B1A1A; }
+        .divider { border: none; border-top: 1px solid #e0d0d0; margin: 16px 0; }
+        .about-text { font-size: 15px; line-height: 1.7; color: #444; }
+        .known-title { font-size: 16px; font-weight: 600; margin: 16px 0 10px; color: #8B1A1A; }
+        .known-list { list-style: none; padding: 0; }
+        .known-list li { font-size: 14px; padding: 5px 0; border-bottom: 1px solid #f0e8e8; color: #333; }
+        .known-list li:last-child { border-bottom: none; }
+
+        .places-section { padding: 20px 60px 60px; }
+        .places-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #8B1A1A;
+            margin-bottom: 30px;
+            font-family: 'Playfair Display', serif;
+        }
+        .places-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 18px;
+        }
+        .place-card {
+            background: white;
+            border-radius: 14px;
+            padding: 20px 22px;
+            border: 1px solid #e8d8d8;
+            transition: transform 0.18s, box-shadow 0.18s;
+        }
+        .place-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(139,26,26,0.12);
+        }
+        .place-icon { font-size: 28px; margin-bottom: 10px; }
+        .place-name { font-size: 16px; font-weight: 600; color: #8B1A1A; margin-bottom: 6px; }
+        .place-desc { font-size: 13px; color: #555; line-height: 1.6; }
+
+        .back-section { text-align: center; padding: 30px 0 50px; }
+        .back-btn {
+            display: inline-block;
+            background-color: #8B1A1A;
+            color: white;
+            text-decoration: none;
+            padding: 14px 40px;
+            border-radius: 999px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .back-btn:hover { background-color: #6B0F0F; }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="header-left">
+            CAMBODIA<br>KAMPONG THOM
+        </div>
+        <div class="header-right">KAMPONG<br>THOM</div>
+    </div>
+
+    <!-- MAIN: IMAGES + INFO BOX -->
+    <div class="content">
+
+        <!-- Replace src with your own photos -->
+        <div class="images-col">
+            <img src="kampongthom1.jpg" alt="Kampong Thom Photo 1">
+            <img src="kampongthom2.jpg" alt="Kampong Thom Photo 2">
+        </div>
+
+        <!-- Info Box -->
+        <div class="info-box">
+            <h2>Kampong Thom</h2>
+            <div class="info-row"><strong>Khmer name:</strong> កំពង់ធំ</div>
+            <div class="info-row"><strong>Capital:</strong> Kampong Thom</div>
+            <div class="info-row"><strong>Population:</strong> 718,796</div>
+            <div class="info-row"><strong>Area:</strong> 13,814 km²</div>
+            <hr class="divider">
+            <div class="known-title">About</div>
+            <p class="about-text">
+                Kampong Thom is a large province in the heart of Cambodia, situated along
+                the Stung Sen River. It is home to Sambor Prei Kuk — one of the most
+                important pre-Angkorian temple complexes in Southeast Asia and a UNESCO
+                World Heritage Site. The province is rich in history, nature, and
+                traditional Cambodian culture.
+            </p>
+            <div class="known-title">What it is known for</div>
+            <ul class="known-list">
+                <li>🏯 Sambor Prei Kuk — UNESCO World Heritage</li>
+                <li>🌊 Stung Sen River</li>
+                <li>🌿 Dense Forests and Wildlife</li>
+                <li>🏺 Pre-Angkorian History</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- TOP PLACES -->
+    <div class="places-section">
+        <div class="places-title">📍 Top Places to Visit</div>
+        <div class="places-grid">
+
+            <div class="place-card">
+                <div class="place-icon">🏯</div>
+                <div class="place-name">Sambor Prei Kuk</div>
+                <div class="place-desc">A UNESCO World Heritage Site featuring over 100 pre-Angkorian temples dating back to the 7th century.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🌊</div>
+                <div class="place-name">Stung Sen River</div>
+                <div class="place-desc">A scenic river running through the province — great for boat trips, fishing, and riverside relaxation.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🌿</div>
+                <div class="place-name">Phnom Santuk</div>
+                <div class="place-desc">A sacred hill with Buddhist shrines, giant reclining Buddhas, and panoramic views of the countryside.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🏺</div>
+                <div class="place-name">Prasat Andet</div>
+                <div class="place-desc">An ancient Khmer temple ruin surrounded by jungle, rarely visited and full of atmosphere.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🦋</div>
+                <div class="place-name">Tmatboey Bird Sanctuary</div>
+                <div class="place-desc">A world-class birdwatching destination home to rare giant ibis and white-shouldered ibis species.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🌳</div>
+                <div class="place-name">Kulen Promtep Wildlife Sanctuary</div>
+                <div class="place-desc">One of Cambodia's most important wildlife areas protecting rare birds, mammals, and forest ecosystems.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🛶</div>
+                <div class="place-name">Floating Villages on Stung Sen</div>
+                <div class="place-desc">Visit communities living along the river in traditional stilt houses and floating homes.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">⛩️</div>
+                <div class="place-name">Wat Kampong Thom</div>
+                <div class="place-desc">The main provincial pagoda — a peaceful and ornate temple at the heart of the capital town.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🚴</div>
+                <div class="place-name">Temple Cycling Tours</div>
+                <div class="place-desc">Rent a bike and explore the jungle-covered temple ruins and quiet rural roads around Sambor Prei Kuk.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🛍️</div>
+                <div class="place-name">Kampong Thom Market</div>
+                <div class="place-desc">A lively local market in the town center selling fresh produce, street food, and handmade goods.</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- BACK TO MAP -->
+    <div class="back-section">
+        <a href="image_map.html" class="back-btn">← Back to Map</a>
+    </div>
+
+</body>
+</html>

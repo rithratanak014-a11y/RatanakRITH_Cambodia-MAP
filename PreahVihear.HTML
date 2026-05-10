@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preah Vihear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #f5f0eb; font-family: 'DM Sans', sans-serif; color: #222; }
+        .header { background: linear-gradient(135deg, #f40606 0%, #ef0707 50%, #c20f0f 100%); padding: 30px 50px; display: flex; justify-content: space-between; align-items: center; min-height: 160px; }
+        .header-left { color: white; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; line-height: 1.8; }
+        .header-right { color: white; font-size: 65px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; font-family: 'DM Sans', sans-serif; line-height: 1; }
+        .content { display: flex; gap: 50px; padding: 50px 60px; align-items: flex-start; }
+        .images-col { display: flex; flex-direction: column; gap: 14px; flex-shrink: 0; width: 420px; }
+        .images-col img { width: 100%; border-radius: 10px; object-fit: cover; height: 230px; }
+        .info-box { border: 2px solid #8B1A1A; border-radius: 16px; padding: 30px 34px; flex: 1; background: white; }
+        .info-box h2 { font-size: 22px; font-weight: 700; margin-bottom: 14px; color: #8B1A1A; font-family: 'Playfair Display', serif; }
+        .info-row { font-size: 15px; margin-bottom: 8px; line-height: 1.6; }
+        .info-row strong { color: #8B1A1A; }
+        .divider { border: none; border-top: 1px solid #e0d0d0; margin: 16px 0; }
+        .about-text { font-size: 15px; line-height: 1.7; color: #444; }
+        .known-title { font-size: 16px; font-weight: 600; margin: 16px 0 10px; color: #8B1A1A; }
+        .known-list { list-style: none; padding: 0; }
+        .known-list li { font-size: 14px; padding: 5px 0; border-bottom: 1px solid #f0e8e8; color: #333; }
+        .known-list li:last-child { border-bottom: none; }
+        .places-section { padding: 20px 60px 60px; }
+        .places-title { font-size: 28px; font-weight: 700; color: #8B1A1A; margin-bottom: 30px; font-family: 'Playfair Display', serif; display: flex; align-items: center; gap: 10px; }
+        .places-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; }
+        .place-card { background: white; border-radius: 14px; padding: 20px 22px; border: 1px solid #e8d8d8; transition: transform 0.18s, box-shadow 0.18s; }
+        .place-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(139,26,26,0.12); }
+        .place-icon { font-size: 28px; margin-bottom: 10px; }
+        .place-name { font-size: 16px; font-weight: 600; color: #8B1A1A; margin-bottom: 6px; }
+        .place-desc { font-size: 13px; color: #555; line-height: 1.6; }
+        .back-section { text-align: center; padding: 30px 0 50px; }
+        .back-btn { display: inline-block; background-color: #8B1A1A; color: white; text-decoration: none; padding: 14px 40px; border-radius: 999px; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; font-weight: 500; transition: background 0.2s; }
+        .back-btn:hover { background-color: #6B0F0F; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">CAMBODIA<br>PREAH VIHEAR</div>
+        <div class="header-right">PREAH VIHEAR</div>
+    </div>
+    <div class="content">
+        <div class="images-col">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Prasat_Preah_Vihear.jpg/1280px-Prasat_Preah_Vihear.jpg" alt="Prasat Preah Vihear Temple">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Preah_Vihear_landscape.jpg/1280px-Preah_Vihear_landscape.jpg" alt="Preah Vihear Landscape">
+        </div>
+        <div class="info-box">
+            <h2>Preah Vihear</h2><div class="info-row"><strong>Khmer name:</strong> ព្រះវិហារ</div>
+            <div class="info-row"><strong>Capital:</strong> Tbeng Meanchey</div>
+            <div class="info-row"><strong>Population:</strong> 211,348</div>
+            <div class="info-row"><strong>Area:</strong> 13,788 km²</div>
+            <hr class="divider">
+            <div class="known-title">About</div>
+            <p class="about-text">
+                Preah Vihear is a large, sparsely populated province in northern Cambodia bordering Thailand. It is home to the UNESCO World Heritage Site of Prasat Preah Vihear, a magnificent 11th-century Khmer temple perched dramatically on a cliff of the Dangrek Mountains. The province also contains several other important Angkorian temples and vast protected forests.
+            </p>
+            <div class="known-title">What it is known for</div>
+            <ul class="known-list">
+                <li>🏯 Prasat Preah Vihear (UNESCO)</li>
+                <li>⛰ Dangrek Mountains</li>
+                <li>🏛 Koh Ker Temple Complex</li>
+                <li>🌿 Kulen Promtep Wildlife Sanctuary</li>
+            </ul>
+        </div>
+    </div>
+    <div class="places-section">
+        <div class="places-title">📍 Top Places to Visit</div>
+        <div class="places-grid">
+            <div class="place-card">
+                <div class="place-icon">🏯</div>
+                <div class="place-name">Prasat Preah Vihear</div>
+                <div class="place-desc">A UNESCO World Heritage cliff-top temple with stunning views over the Cambodian plains — one of the country's most dramatic sites.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🏛</div>
+                <div class="place-name">Koh Ker Temple Complex</div>
+                <div class="place-desc">An ancient 10th-century Angkorian capital with a towering seven-tiered pyramid temple at its centre.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">⛰</div>
+                <div class="place-name">Dangrek Escarpment</div>
+                <div class="place-desc">A dramatic cliff-edge mountain range forming the natural border with Thailand, offering sweeping panoramas.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🌿</div>
+                <div class="place-name">Kulen Promtep Wildlife Sanctuary</div>
+                <div class="place-desc">One of Cambodia's most important dry forest habitats, home to rare birds and endangered species.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🏛</div>
+                <div class="place-name">Prasat Thom</div>
+                <div class="place-desc">The central pyramid tower of Koh Ker — a striking 36-metre structure that once rivalled Angkor Wat.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🌾</div>
+                <div class="place-name">Tbeng Meanchey Town</div>
+                <div class="place-desc">The quiet provincial capital serving as a base for exploring Preah Vihear's many heritage sites.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🦅</div>
+                <div class="place-name">Bird Watching</div>
+                <div class="place-desc">The dry forests and grasslands are critical habitat for endangered vultures and giant ibis.</div>
+            </div>
+            <div class="place-card">
+                <div class="place-icon">🏺</div>
+                <div class="place-name">Scattered Khmer Ruins</div>
+                <div class="place-desc">Remote and rarely visited Angkorian temples hidden throughout the province's countryside.</div>
+            </div>
+        </div>
+    </div>
+    <div class="back-section">
+        <a href="image_map.html" class="back-btn">← Back to Map</a>
+    </div>
+</body>
+</html>

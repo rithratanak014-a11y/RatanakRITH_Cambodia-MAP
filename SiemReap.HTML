@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siem Reap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #f5f0eb; font-family: 'DM Sans', sans-serif; color: #222; }
+
+        /* ── HEADER ── */
+        .header {
+            background: linear-gradient(135deg, #f40606 0%, #ef0707 50%, #c20f0f 100%);
+            padding: 30px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 160px;
+        }
+        .header-left {
+            color: white;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            line-height: 1.8;
+        }
+        .header-right {
+            color: white;
+            font-size: 90px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-family: 'DM Sans', sans-serif;
+            line-height: 1;
+        }
+
+        /* ── MAIN CONTENT ── */
+        .content {
+            display: flex;
+            gap: 50px;
+            padding: 50px 60px;
+            align-items: flex-start;
+        }
+
+        /* ── LEFT: IMAGES ── */
+        .images-col {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            flex-shrink: 0;
+            width: 420px;
+        }
+        .images-col img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            height: 230px;
+        }
+
+        /* ── RIGHT: INFO BOX ── */
+        .info-box {
+            border: 2px solid #8B1A1A;
+            border-radius: 16px;
+            padding: 30px 34px;
+            flex: 1;
+            background: white;
+        }
+        .info-box h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 14px;
+            color: #8B1A1A;
+            font-family: 'Playfair Display', serif;
+        }
+        .info-row {
+            font-size: 15px;
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        .info-row strong { color: #8B1A1A; }
+        .divider { border: none; border-top: 1px solid #e0d0d0; margin: 16px 0; }
+        .about-text {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #444;
+        }
+        .known-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 16px 0 10px;
+            color: #8B1A1A;
+        }
+        .known-list {
+            list-style: none;
+            padding: 0;
+        }
+        .known-list li {
+            font-size: 14px;
+            padding: 5px 0;
+            border-bottom: 1px solid #f0e8e8;
+            color: #333;
+        }
+        .known-list li:last-child { border-bottom: none; }
+
+        /* ── PLACES SECTION ── */
+        .places-section {
+            padding: 20px 60px 60px;
+        }
+        .places-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #8B1A1A;
+            margin-bottom: 30px;
+            font-family: 'Playfair Display', serif;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .places-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 18px;
+        }
+        .place-card {
+            background: white;
+            border-radius: 14px;
+            padding: 20px 22px;
+            border: 1px solid #e8d8d8;
+            transition: transform 0.18s, box-shadow 0.18s;
+        }
+        .place-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(139,26,26,0.12);
+        }
+        .place-icon { font-size: 28px; margin-bottom: 10px; }
+        .place-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #8B1A1A;
+            margin-bottom: 6px;
+        }
+        .place-desc {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* ── BACK BUTTON ── */
+        .back-section {
+            text-align: center;
+            padding: 30px 0 50px;
+        }
+        .back-btn {
+            display: inline-block;
+            background-color: #8B1A1A;
+            color: white;
+            text-decoration: none;
+            padding: 14px 40px;
+            border-radius: 999px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .back-btn:hover { background-color: #6B0F0F; }
+    </style>
+</head>
+<body>
+
+    <!-- ── HEADER ── -->
+    <div class="header">
+        <div class="header-left">
+            CAMBODIA<br>SIEM REAP
+        </div>
+        <div class="header-right">SIEM REAP</div>
+    </div>
+
+    <!-- ── MAIN: IMAGES + INFO BOX ── -->
+    <div class="content">
+
+        <!-- Images -->
+        <div class="images-col">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Ta_Prohm_1.jpg/1280px-Ta_Prohm_1.jpg" alt="Ta Prohm Temple">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Angkor_Wat_temple.jpg/1280px-Angkor_Wat_temple.jpg" alt="Angkor Wat">
+        </div>
+
+        <!-- Info Box -->
+        <div class="info-box">
+            <h2>Siem Reap</h2>
+            <div class="info-row"><strong>Khmer name:</strong> សៀមរាប</div>
+            <div class="info-row"><strong>Capital:</strong> Siem Reap</div>
+            <div class="info-row"><strong>Population:</strong> 1,084,825</div>
+            <div class="info-row"><strong>Area:</strong> 10,299 km²</div>
+            <hr class="divider">
+            <div class="known-title">About</div>
+            <p class="about-text">
+                Siem Reap is a province in northwestern Cambodia. It is home to the famous
+                Angkor Wat temple complex, a UNESCO World Heritage Site visited by millions every year.
+            </p>
+            <div class="known-title">What it is known for</div>
+            <ul class="known-list">
+                <li>🏯 Angkor Wat</li>
+                <li>🏯 Bayon Temple</li>
+                <li>🌳 Ta Prohm</li>
+                <li>🌊 Tonle Sap Lake</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ── TOP PLACES ── -->
+    <div class="places-section">
+        <div class="places-title">📍 Top Places to Visit</div>
+        <div class="places-grid">
+
+            <div class="place-card">
+                <div class="place-icon">🏯</div>
+                <div class="place-name">Angkor Wat</div>
+                <div class="place-desc">The largest and most iconic temple complex in the world.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🏯</div>
+                <div class="place-name">Angkor Thom</div>
+                <div class="place-desc">The ancient capital city with Bayon Temple and giant stone faces.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🌳</div>
+                <div class="place-name">Ta Prohm</div>
+                <div class="place-desc">A temple famous for trees growing through ancient ruins.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🌊</div>
+                <div class="place-name">Tonle Sap Lake</div>
+                <div class="place-desc">Visit floating villages and unique ecosystems.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🌆</div>
+                <div class="place-name">Pub Street</div>
+                <div class="place-desc">A lively area full of food, shopping, and nightlife.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🏞️</div>
+                <div class="place-name">Phnom Kulen</div>
+                <div class="place-desc">A sacred mountain with waterfalls and historical carvings.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🛍️</div>
+                <div class="place-name">Night Market</div>
+                <div class="place-desc">Explore local crafts, souvenirs, and street food.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🎭</div>
+                <div class="place-name">Apsara Dance Show</div>
+                <div class="place-desc">Experience traditional Cambodian dance and culture.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🏛️</div>
+                <div class="place-name">Angkor National Museum</div>
+                <div class="place-desc">Learn about Khmer history and the Angkor civilization.</div>
+            </div>
+
+            <div class="place-card">
+                <div class="place-icon">🌳</div>
+                <div class="place-name">Cambodia Landmine Museum</div>
+                <div class="place-desc">An educational site about Cambodia's recent history.</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ── BACK TO MAP ── -->
+    <div class="back-section">
+        <a href="image_map.html" class="back-btn">← Back to Map</a>
+    </div>
+
+</body>
+</html>
